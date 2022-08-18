@@ -41,4 +41,4 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal('.home-text, .home-img, .about-img, .about-text, .box, .s-box, .connect-text, .btn, .contact-box', {interval: 100})
+sr.reveal('.home-text, .home-img, .about-img, .about-text, .box, .s-box, .connect-text, .btn, .contact-box')
