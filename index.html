@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/menu2.jpg" type="image/jpg">
+    <meta name="theme-color" content="#ffb411">
+
     <title>Responsive Burger Website</title>
 
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Web Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 
@@ -174,6 +178,11 @@
 
 
 
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js')
+        }
+    </script>
 <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
