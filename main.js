@@ -13,7 +13,6 @@ window.addEventListener('scroll', () => {
 // Dark Mode
 let darkmode = document.querySelector('#darkmode');
 let modeStoraged = localStorage.getItem('darkmode');
-console.log(modeStoraged);
 
 if (modeStoraged === 'active') {
 

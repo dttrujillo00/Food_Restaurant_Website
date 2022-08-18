@@ -25,8 +25,16 @@ let filesToCache = [
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
     e.waitUntil(
-        caches.open(CACHE_NAME)
-        .then( (cache) => cache.addAll(filesToCache))
+        (async() => {
+            try {
+                caches.open(CACHE_NAME)
+                .then( (cache) => cache.addAll(filesToCache))
+                
+            } catch (error) {
+                console.log("error occured while caching...")
+            }
+
+        })()
     )
 })
 
